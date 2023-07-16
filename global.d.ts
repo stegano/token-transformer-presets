@@ -1,0 +1,5 @@
+// Handlebars template file extension
+declare module "*.hbs" {
+  const content: string;
+  export default content;
+}

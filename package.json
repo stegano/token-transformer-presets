@@ -1,0 +1,57 @@
+{
+  "name": "token-transformer-presets",
+  "version": "0.0.1",
+  "description": "`@stegano/token-transformer` official presets.",
+  "exports": {
+    "./json-formatter": "./build/json-formatter.js",
+    "./jwt-viewer": "./build/jwt-viewer.js",
+    "./zeplin-css": "./build/zeplin-css.js",
+    "./zeplin-scss": "./build/zeplin-scss.js"
+  },
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "rm -rf ./build && webpack --config ./webpack.config.js",
+    "deploy": "npm run build && npm publish --access=public"
+  },
+  "author": "Yongwoo Jung<stegano@naver.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@stegano/token-transformer": "^0.1.4",
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^20.4.0",
+    "@types/underscore": "^1.11.5",
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.8.8",
+    "raw-loader": "^4.0.2",
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "fs-extra": "^11.1.1"
+  },
+  "keywords": [
+    "token",
+    "transformer",
+    "zeplin",
+    "figma",
+    "jwt",
+    "json",
+    "design-token"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "homepage": "https://github.com/stegano/token-transformer-presets#readme",
+  "bugs": {
+    "url": "https://github.com/stegano/token-transformer-presets/issues"
+  }
+}
