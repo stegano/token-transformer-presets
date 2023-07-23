@@ -1,6 +1,6 @@
 {
   "name": "token-transformer-presets",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "`@stegano/token-transformer` official presets.",
   "exports": {
     "./json-formatter": "./build/json-formatter.js",
