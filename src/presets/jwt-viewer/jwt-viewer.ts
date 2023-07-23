@@ -49,17 +49,17 @@ export const JwtViewer: Preset = {
       }
       tokenList.forEach((data: string) => {
         const [header, payload, signature] = data.split(".");
-        log(chalk.bgGray.white.bold("# Header(Algorithm)"));
+        log(chalk.bgGreen.white.bold("# Header(Algorithm)"));
         log("");
         log(chalk.bold(prettyJsonString(Buffer.from(header, "base64").toString("utf-8"))));
         log("");
         log("");
-        log(chalk.bgGray.white.bold("# Payload(Data)"));
+        log(chalk.bgGreen.white.bold("# Payload(Data)"));
         log("");
         log(chalk.bold(prettyJsonString(Buffer.from(payload, "base64").toString("utf-8"))));
         log("");
         log("");
-        log(chalk.bgGray.white.bold("# Signature"));
+        log(chalk.bgGreen.white.bold("# Signature"));
         log(chalk.bold(signature));
         log("");
         log("");
