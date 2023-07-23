@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { Preset } from "@stegano/token-transformer";
 import { removeEmptyLines } from "../../post-processors";
 import { toJson } from "../../pre-processors";
