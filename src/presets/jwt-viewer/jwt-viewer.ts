@@ -16,7 +16,10 @@ function isBase64(data: string) {
 }
 
 const getJwt = (token: string) => {
-  const matches = token.match(/[A-Za-z0-9+/=]{10,}\.[A-Za-z0-9+/=]{5,}\.[A-Za-z0-9+/=]{5,}/g);
+  const matches = token
+    .replaceAll("-", "+")
+    .replaceAll("_", "/")
+    .match(/[A-Za-z0-9+/=]{10,}\.[A-Za-z0-9+/=]{5,}\.[A-Za-z0-9+/=]{5,}/g);
   return (
     matches &&
     matches.filter((str) => {
